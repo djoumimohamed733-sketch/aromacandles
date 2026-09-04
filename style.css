@@ -1818,8 +1818,9 @@ button {
 
   .hero-visual {
     order: -1;
-    max-width: 540px;
+    max-width: 500px;
     margin: 0 auto;
+    width: 100%;
   }
 
   .order-grid {
@@ -1836,20 +1837,82 @@ button {
 }
 
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .site-header {
+    padding: 10px 0;
+  }
+
+  .brand-name {
+    font-size: 1.25rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.72rem;
+  }
+
   .main-nav {
-    display: none; /* Mobile navigation simplified to top bar & quick actions */
+    display: none; /* Mobile navigation simplified */
+  }
+
+  .hero-section {
+    padding: 30px 0 45px;
   }
 
   .hero-title {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
 
   .hero-highlight {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
+  }
+
+  .hero-desc {
+    font-size: 0.98rem;
+  }
+
+  .delivery-highlight-card {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .delivery-icon-box {
+    width: 44px;
+    height: 44px;
+  }
+
+  .delivery-card-text strong {
+    font-size: 0.95rem;
+  }
+
+  .hero-contacts-bar {
+    gap: 8px;
   }
 
   .contact-pill {
     flex: 1 1 100%;
+    min-width: 0;
+    padding: 8px 12px;
+  }
+
+  .hero-actions-row {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
   }
 
   .wilayas-content {
@@ -1857,40 +1920,90 @@ button {
     text-align: center;
   }
 
+  .btn-wilaya-cta {
+    width: 100%;
+    justify-content: center;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 28px;
   }
 
   .order-info-side,
   .order-form-side {
-    padding: 30px 20px;
+    padding: 26px 18px;
   }
 
-  .announcement-text {
+  .announcement-bar {
+    font-size: 0.8rem;
+    padding: 8px 0;
+  }
+
+  .announcement-content {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .filter-tabs {
+    gap: 6px;
+  }
+
+  .filter-btn {
+    padding: 7px 14px;
     font-size: 0.82rem;
   }
 }
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 1.85rem;
+    font-size: 1.7rem;
   }
 
   .hero-highlight {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
-  .products-grid {
-    grid-template-columns: 1fr;
+  .hero-title-sub {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 1.65rem;
+  }
+
+  .order-heading {
+    font-size: 1.6rem;
   }
 
   .floating-quick-bar {
-    width: 92%;
-    justify-content: space-around;
+    width: 95%;
+    max-width: 360px;
+    padding: 6px 10px;
+    bottom: 12px;
+  }
+
+  .floating-btn {
+    padding: 7px 12px;
+    font-size: 0.82rem;
   }
 
   .floating-text {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
+  }
+
+  .product-details {
+    padding: 16px;
+  }
+
+  .product-title {
+    font-size: 1.15rem;
   }
 }
+
