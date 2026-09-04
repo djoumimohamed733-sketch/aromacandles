@@ -864,3 +864,11 @@ function submitOrder() {
   const encodedUrl = `https://wa.me/213656102517?text=${encodeURIComponent(message)}`;
   window.open(encodedUrl, '_blank');
 }
+
+// Global Window Bindings for mobile inline events
+window.openProductModal = openProductModal;
+window.closeModal = closeModal;
+window.adjustQty = adjustQty;
+window.submitOrder = submitOrder;
+window.selectInOrderForm = selectInOrderForm;
+window.toggleLanguage = toggleLanguage;

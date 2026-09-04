@@ -2,17 +2,17 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Aroma Works Candles | تشكيلة الشموع المعطرة الفاخرة</title>
   <meta name="description" content="بروفايل وتشكيلة شموع Aroma Works الفاخرة. شمع طبيعي، روائح آسرة، وتوصيل متوفر لجميع الولايات الـ 58 في الجزائر.">
 
   <!-- Favicon / Profile Icon -->
   <link rel="icon" type="image/jpeg" href="photo_1_2026-09-04_14-48-35.jpg">
 
-  <!-- Google Fonts: Cairo & Amiri for Arabic, Playfair Display & Plus Jakarta Sans for Latin -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -112,7 +112,7 @@
           <div class="delivery-icon-box">
             <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="1" y="3" width="15" height="13"></rect>
-              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon>
               <circle cx="5.5" cy="18.5" r="2.5"></circle>
               <circle cx="18.5" cy="18.5" r="2.5"></circle>
             </svg>
@@ -290,9 +290,306 @@
         <button class="filter-btn" data-filter="lantern" data-i18n="filter_lantern">فانوس السيترونيلا</button>
       </div>
 
-      <!-- Products Grid -->
+      <!-- Products Grid (Pre-rendered for full mobile offline/local reliability) -->
       <div class="products-grid" id="productsContainer">
-        <!-- Rendered dynamically via app.js for full bilingual and filtering support -->
+        
+        <!-- Product 1: Bourbon Vanilla -->
+        <article class="product-card" data-category="luxury-cube">
+          <div class="product-image-box" onclick="openProductModal('bourbon-vanilla-luxury')">
+            <img src="photo_3_2026-09-04_14-48-35.jpg" alt="Bourbon Vanilla" class="product-img" loading="lazy">
+            <div class="product-badges">
+              <span class="badge-stock"><span class="pulse-dot"></span> متوفر حالياً</span>
+              <span class="badge-type">علبة هدايا فاخرة</span>
+            </div>
+            <div class="view-details-overlay"><span class="btn-view-quick">معاينة التفاصيل</span></div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Bourbon Vanilla (فانيليا بوربون)</h3>
+            <div class="product-color-row">
+              <span class="color-dot" style="background-color: #9E2A2B;"></span>
+              <span><strong>اللون والتصميم:</strong> أحمر ياقوتي دافئ مع شريط ساتان نبيذي</span>
+            </div>
+            <div class="product-notes">
+              <strong>النوتات العطرية:</strong> فانيليا بوربون الفاخرة، كراميل دافئ، لمسات خشبية مدخنة وعنبر ذهبي.
+            </div>
+            <div class="product-features-tags">
+              <span class="feature-tag">⏱️ 35-40 Hours</span>
+              <span class="feature-tag">علبة مكعبة زجاجية فاخرة</span>
+              <span class="feature-tag">شريط هدايا ساتان</span>
+            </div>
+            <div class="product-actions">
+              <a href="https://wa.me/213656102517?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Aroma%20Works%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B4%D9%85%D8%B9%D8%A9%20Bourbon%20Vanilla" target="_blank" rel="noopener" class="btn-card-wa">
+                <span>اطلب عبر الواتساب</span>
+              </a>
+              <button type="button" class="btn-card-details" onclick="openProductModal('bourbon-vanilla-luxury')">🔍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2: Rosy Musk -->
+        <article class="product-card" data-category="luxury-cube">
+          <div class="product-image-box" onclick="openProductModal('rosy-musk-luxury')">
+            <img src="photo_9_2026-09-04_14-48-35.jpg" alt="Rosy Musk" class="product-img" loading="lazy">
+            <div class="product-badges">
+              <span class="badge-stock"><span class="pulse-dot"></span> متوفر حالياً</span>
+              <span class="badge-type">علبة هدايا فاخرة</span>
+            </div>
+            <div class="view-details-overlay"><span class="btn-view-quick">معاينة التفاصيل</span></div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Rosy Musk (المسك الوردي)</h3>
+            <div class="product-color-row">
+              <span class="color-dot" style="background-color: #F2D7D9;"></span>
+              <span><strong>اللون والتصميم:</strong> أبيض عاجي ناعم مع شريط وردي دراقي</span>
+            </div>
+            <div class="product-notes">
+              <strong>النوتات العطرية:</strong> بتلات الورد الجوري الناعمة، مسك أبيض مخملي، وبودرة زهرية رقيقة.
+            </div>
+            <div class="product-features-tags">
+              <span class="feature-tag">⏱️ 35-40 Hours</span>
+              <span class="feature-tag">عطر مهدئ ومريح</span>
+              <span class="feature-tag">مثالية لغرف النوم</span>
+            </div>
+            <div class="product-actions">
+              <a href="https://wa.me/213656102517?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Aroma%20Works%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B4%D9%85%D8%B9%D8%A9%20Rosy%20Musk" target="_blank" rel="noopener" class="btn-card-wa">
+                <span>اطلب عبر الواتساب</span>
+              </a>
+              <button type="button" class="btn-card-details" onclick="openProductModal('rosy-musk-luxury')">🔍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3: Noble Forest -->
+        <article class="product-card" data-category="luxury-cube">
+          <div class="product-image-box" onclick="openProductModal('noble-forest-luxury')">
+            <img src="photo_5_2026-09-04_14-48-35.jpg" alt="Noble Forest" class="product-img" loading="lazy">
+            <div class="product-badges">
+              <span class="badge-stock"><span class="pulse-dot"></span> متوفر حالياً</span>
+              <span class="badge-type">علبة هدايا فاخرة</span>
+            </div>
+            <div class="view-details-overlay"><span class="btn-view-quick">معاينة التفاصيل</span></div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Noble Forest (الغابة النبيلة)</h3>
+            <div class="product-color-row">
+              <span class="color-dot" style="background-color: #748B75;"></span>
+              <span><strong>اللون والتصميم:</strong> أخضر غابي فاتح (سيلادون) مع شريط زمردي</span>
+            </div>
+            <div class="product-notes">
+              <strong>النوتات العطرية:</strong> إبر الصنوبر الطبيعية، أخشاب الأرز، أوكالبتوس منعش وتراب الغابة.
+            </div>
+            <div class="product-features-tags">
+              <span class="feature-tag">⏱️ 35-40 Hours</span>
+              <span class="feature-tag">نفحات نقية ومنعشة</span>
+              <span class="feature-tag">شمع صويا نقي</span>
+            </div>
+            <div class="product-actions">
+              <a href="https://wa.me/213656102517?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Aroma%20Works%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B4%D9%85%D8%B9%D8%A9%20Noble%20Forest" target="_blank" rel="noopener" class="btn-card-wa">
+                <span>اطلب عبر الواتساب</span>
+              </a>
+              <button type="button" class="btn-card-details" onclick="openProductModal('noble-forest-luxury')">🔍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4: Trio Prestige -->
+        <article class="product-card" data-category="luxury-cube">
+          <div class="product-image-box" onclick="openProductModal('luxury-trio-box')">
+            <img src="photo_8_2026-09-04_14-48-35.jpg" alt="Trio Prestige" class="product-img" loading="lazy">
+            <div class="product-badges">
+              <span class="badge-stock"><span class="pulse-dot"></span> متوفر حالياً</span>
+              <span class="badge-type">طقم هدايا ملكي</span>
+            </div>
+            <div class="view-details-overlay"><span class="btn-view-quick">معاينة التفاصيل</span></div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Trio Prestige (المجموعة الملكية الثلاثية)</h3>
+            <div class="product-color-row">
+              <span class="color-dot" style="background-color: #C58940;"></span>
+              <span><strong>اللون والتصميم:</strong> 3 علب كاملة: وردي عاجي، أخضر زمردي، أحمر نبيذي</span>
+            </div>
+            <div class="product-notes">
+              <strong>النوتات العطرية:</strong> تجمع بين الدفء الغني، الانتعاش العشبي، والرقة الوردية.
+            </div>
+            <div class="product-features-tags">
+              <span class="feature-tag">⏱️ 120 Hours مجموع</span>
+              <span class="feature-tag">3 شموع كاملة بالحجم الكبير</span>
+              <span class="feature-tag">أفضل خيار للإهداء</span>
+            </div>
+            <div class="product-actions">
+              <a href="https://wa.me/213656102517?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Aroma%20Works%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B7%D9%82%D9%85%20Trio%20Prestige" target="_blank" rel="noopener" class="btn-card-wa">
+                <span>اطلب عبر الواتساب</span>
+              </a>
+              <button type="button" class="btn-card-details" onclick="openProductModal('luxury-trio-box')">🔍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5: Apothecary Cork Jars -->
+        <article class="product-card" data-category="cork-jar">
+          <div class="product-image-box" onclick="openProductModal('apothecary-duo-cork')">
+            <img src="photo_4_2026-09-04_14-48-35.jpg" alt="Apothecary Jars" class="product-img" loading="lazy">
+            <div class="product-badges">
+              <span class="badge-stock"><span class="pulse-dot"></span> متوفر حالياً</span>
+              <span class="badge-type">برطمان فلين كلاسيكي</span>
+            </div>
+            <div class="view-details-overlay"><span class="btn-view-quick">معاينة التفاصيل</span></div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Vanilla Cotton & Sage Teakwood</h3>
+            <div class="product-color-row">
+              <span class="color-dot" style="background-color: #84A59D;"></span>
+              <span><strong>اللون والتصميم:</strong> أبيض نقي + أزرق مخضر بغطاء فلين طبيعي</span>
+            </div>
+            <div class="product-notes">
+              <strong>النوتات العطرية:</strong> الموديل الأول: قطن ناعم وفانيليا. الموديل الثاني: ميرمية وخشب الساج.
+            </div>
+            <div class="product-features-tags">
+              <span class="feature-tag">⏱️ 45-50 Hours</span>
+              <span class="feature-tag">زجاج كلاسيكي عتيق</span>
+              <span class="feature-tag">سدادة فلين محكمة</span>
+            </div>
+            <div class="product-actions">
+              <a href="https://wa.me/213656102517?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Aroma%20Works%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%A8%D8%B1%D8%B7%D9%85%D8%A7%D9%86%20%D8%A7%D9%84%D9%81%D9%84%D9%8A%D9%86" target="_blank" rel="noopener" class="btn-card-wa">
+                <span>اطلب عبر الواتساب</span>
+              </a>
+              <button type="button" class="btn-card-details" onclick="openProductModal('apothecary-duo-cork')">🔍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6: Matte Tin Travel Collection -->
+        <article class="product-card" data-category="matte-tin">
+          <div class="product-image-box" onclick="openProductModal('matte-tin-travel-collection')">
+            <img src="photo_7_2026-09-04_14-48-35.jpg" alt="Matte Tin Collection" class="product-img" loading="lazy">
+            <div class="product-badges">
+              <span class="badge-stock"><span class="pulse-dot"></span> متوفر حالياً</span>
+              <span class="badge-type">علب معدنية ملونة</span>
+            </div>
+            <div class="view-details-overlay"><span class="btn-view-quick">معاينة التفاصيل</span></div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Matte Tin Collection (تشكيلة العلب المعدنية)</h3>
+            <div class="product-color-row">
+              <span class="color-dot" style="background-color: #4A6B82;"></span>
+              <span><strong>اللون والتصميم:</strong> 5 ألوان مات: أزرق، أسود، وردي ترابي، كراميل، زيتوني</span>
+            </div>
+            <div class="product-notes">
+              <strong>النوتات العطرية:</strong> Fresh Blossom, Myrrh & Sandalwood, Midnight Summer, Spicy Bread, Green Meadow.
+            </div>
+            <div class="product-features-tags">
+              <span class="feature-tag">⏱️ 25-30 Hours</span>
+              <span class="feature-tag">مقاومة للصدمات وسهلة الحمل</span>
+              <span class="feature-tag">ألوان مات عصرية</span>
+            </div>
+            <div class="product-actions">
+              <a href="https://wa.me/213656102517?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Aroma%20Works%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%A7%D9%84%D8%B9%D9%84%D8%A8%20%D8%A7%D9%84%D9%85%D8%B9%D8%AF%D9%86%D9%8A%D8%A9" target="_blank" rel="noopener" class="btn-card-wa">
+                <span>اطلب عبر الواتساب</span>
+              </a>
+              <button type="button" class="btn-card-details" onclick="openProductModal('matte-tin-travel-collection')">🔍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 7: Bougie Citronnelle -->
+        <article class="product-card" data-category="lantern">
+          <div class="product-image-box" onclick="openProductModal('citronella-lantern')">
+            <img src="photo_6_2026-09-04_14-48-35.jpg" alt="Bougie Citronnelle" class="product-img" loading="lazy">
+            <div class="product-badges">
+              <span class="badge-stock"><span class="pulse-dot"></span> متوفر حالياً</span>
+              <span class="badge-type">فانوس سيترونيلا</span>
+            </div>
+            <div class="view-details-overlay"><span class="btn-view-quick">معاينة التفاصيل</span></div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Bougie Citronnelle (فانوس العنبر - سيترونيلا)</h3>
+            <div class="product-color-row">
+              <span class="color-dot" style="background-color: #D47334;"></span>
+              <span><strong>اللون والتصميم:</strong> زجاج عنبري دافئ مضلع مع مقبض معدني للتعليق</span>
+            </div>
+            <div class="product-notes">
+              <strong>النوتات العطرية:</strong> زيت السيترونيلا النقي 100% برائحة ليمونية منعشة طاردة للبعوض.
+            </div>
+            <div class="product-features-tags">
+              <span class="feature-tag">⏱️ 10 Hours اشتعال</span>
+              <span class="feature-tag">طارد طبيعي للبعوض</span>
+              <span class="feature-tag">مثالية للجلسات الخارجية</span>
+            </div>
+            <div class="product-actions">
+              <a href="https://wa.me/213656102517?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Aroma%20Works%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%81%D8%A7%D9%86%D9%88%D8%B3%20%D8%A7%D9%84%D8%B3%D9%8A%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D9%84%D8%A7" target="_blank" rel="noopener" class="btn-card-wa">
+                <span>اطلب عبر الواتساب</span>
+              </a>
+              <button type="button" class="btn-card-details" onclick="openProductModal('citronella-lantern')">🔍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 8: Fresh Blossom Tin -->
+        <article class="product-card" data-category="matte-tin">
+          <div class="product-image-box" onclick="openProductModal('fresh-blossom-tin')">
+            <img src="photo_2_2026-09-04_14-48-35.jpg" alt="Fresh Blossom Tin" class="product-img" loading="lazy">
+            <div class="product-badges">
+              <span class="badge-stock"><span class="pulse-dot"></span> متوفر حالياً</span>
+              <span class="badge-type">علبة معدنية ملونة</span>
+            </div>
+            <div class="view-details-overlay"><span class="btn-view-quick">معاينة التفاصيل</span></div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Fresh Blossom Tin (زهر الربيع الأزرق)</h3>
+            <div class="product-color-row">
+              <span class="color-dot" style="background-color: #3D617D;"></span>
+              <span><strong>اللون والتصميم:</strong> علبة معدنية زرقاء بحرية غير لامعة</span>
+            </div>
+            <div class="product-notes">
+              <strong>النوتات العطرية:</strong> أزهار البرتقال، الياسمين الأبيض، ورذاذ الصباح المنعش.
+            </div>
+            <div class="product-features-tags">
+              <span class="feature-tag">⏱️ 25-30 Hours</span>
+              <span class="feature-tag">حجم مدمج وأنيق</span>
+              <span class="feature-tag">انتشار فوري للرائحة</span>
+            </div>
+            <div class="product-actions">
+              <a href="https://wa.me/213656102517?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Aroma%20Works%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B4%D9%85%D8%B9%D8%A9%20Fresh%20Blossom" target="_blank" rel="noopener" class="btn-card-wa">
+                <span>اطلب عبر الواتساب</span>
+              </a>
+              <button type="button" class="btn-card-details" onclick="openProductModal('fresh-blossom-tin')">🔍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 9: Spicy Bread Tin -->
+        <article class="product-card" data-category="matte-tin">
+          <div class="product-image-box" onclick="openProductModal('spicy-bread-tin')">
+            <img src="photo_7_2026-09-04_14-48-35.jpg" alt="Spicy Bread" class="product-img" loading="lazy">
+            <div class="product-badges">
+              <span class="badge-stock"><span class="pulse-dot"></span> متوفر حالياً</span>
+              <span class="badge-type">علبة معدنية ملونة</span>
+            </div>
+            <div class="view-details-overlay"><span class="btn-view-quick">معاينة التفاصيل</span></div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Spicy Bread (خبز التوابل الدافئ)</h3>
+            <div class="product-color-row">
+              <span class="color-dot" style="background-color: #9E643C;"></span>
+              <span><strong>اللون والتصميم:</strong> علبة معدنية بنية كراميل مطفية</span>
+            </div>
+            <div class="product-notes">
+              <strong>النوتات العطرية:</strong> قرفة دافئة، زنجبيل مطحون، جوزة الطيب ولمسات عسل المخابز.
+            </div>
+            <div class="product-features-tags">
+              <span class="feature-tag">⏱️ 25-30 Hours</span>
+              <span class="feature-tag">أجواء دافئة ومريحة</span>
+              <span class="feature-tag">فتيل قطني هادئ</span>
+            </div>
+            <div class="product-actions">
+              <a href="https://wa.me/213656102517?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Aroma%20Works%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B4%D9%85%D8%B9%D8%A9%20Spicy%20Bread" target="_blank" rel="noopener" class="btn-card-wa">
+                <span>اطلب عبر الواتساب</span>
+              </a>
+              <button type="button" class="btn-card-details" onclick="openProductModal('spicy-bread-tin')">🔍</button>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -357,12 +654,69 @@
                 <input type="tel" id="customerPhone" required placeholder="06... / 05... / 07..." data-i18n-placeholder="form_phone_placeholder">
               </div>
 
-              <!-- Wilaya Selector (58 Algerian Wilayas) -->
+              <!-- Wilaya Selector (All 58 Algerian Wilayas pre-rendered) -->
               <div class="form-group">
                 <label for="customerWilaya" data-i18n="form_wilaya_label">الولاية (58 ولاية متوفرة)</label>
                 <select id="customerWilaya" required>
                   <option value="" disabled selected data-i18n="form_wilaya_placeholder">اختر ولايتك...</option>
-                  <!-- Populated dynamically with all 58 wilayas in Arabic & French -->
+                  <option value="01 - أدرار">01 - أدرار</option>
+                  <option value="02 - الشلف">02 - الشلف</option>
+                  <option value="03 - الأغواط">03 - الأغواط</option>
+                  <option value="04 - أم البواقي">04 - أم البواقي</option>
+                  <option value="05 - باتنة">05 - باتنة</option>
+                  <option value="06 - بجاية">06 - بجاية</option>
+                  <option value="07 - بسكرة">07 - بسكرة</option>
+                  <option value="08 - بشار">08 - بشار</option>
+                  <option value="09 - البليدة">09 - البليدة</option>
+                  <option value="10 - البويرة">10 - البويرة</option>
+                  <option value="11 - تمنراست">11 - تمنراست</option>
+                  <option value="12 - تبسة">12 - تبسة</option>
+                  <option value="13 - تلمسان">13 - تلمسان</option>
+                  <option value="14 - تيارت">14 - تيارت</option>
+                  <option value="15 - تيزي وزو">15 - تيزي وزو</option>
+                  <option value="16 - الجزائر (العاصمة)">16 - الجزائر (العاصمة)</option>
+                  <option value="17 - الجلفة">17 - الجلفة</option>
+                  <option value="18 - جيجل">18 - جيجل</option>
+                  <option value="19 - سطيف">19 - سطيف</option>
+                  <option value="20 - سعيدة">20 - سعيدة</option>
+                  <option value="21 - سكيكدة">21 - سكيكدة</option>
+                  <option value="22 - سيدي بلعباس">22 - سيدي بلعباس</option>
+                  <option value="23 - عنابة">23 - عنابة</option>
+                  <option value="24 - قالمة">24 - قالمة</option>
+                  <option value="25 - قسنطينة">25 - قسنطينة</option>
+                  <option value="26 - المدية">26 - المدية</option>
+                  <option value="27 - مستغانم">27 - مستغانم</option>
+                  <option value="28 - المسيلة">28 - المسيلة</option>
+                  <option value="29 - معسكر">29 - معسكر</option>
+                  <option value="30 - ورقلة">30 - ورقلة</option>
+                  <option value="31 - وهران">31 - وهران</option>
+                  <option value="32 - البيض">32 - البيض</option>
+                  <option value="33 - إليزي">33 - إليزي</option>
+                  <option value="34 - برج بوعريريج">34 - برج بوعريريج</option>
+                  <option value="35 - بومرداس">35 - بومرداس</option>
+                  <option value="36 - الطارف">36 - الطارف</option>
+                  <option value="37 - تندوف">37 - تندوف</option>
+                  <option value="38 - تسمسيلت">38 - تسمسيلت</option>
+                  <option value="39 - الوادي">39 - الوادي</option>
+                  <option value="40 - خنشلة">40 - خنشلة</option>
+                  <option value="41 - سوق أهراس">41 - سوق أهراس</option>
+                  <option value="42 - تيبازة">42 - تيبازة</option>
+                  <option value="43 - ميلة">43 - ميلة</option>
+                  <option value="44 - عين الدفلى">44 - عين الدفلى</option>
+                  <option value="45 - النعامة">45 - النعامة</option>
+                  <option value="46 - عين تموشنت">46 - عين تموشنت</option>
+                  <option value="47 - غرداية">47 - غرداية</option>
+                  <option value="48 - غليزان">48 - غليزان</option>
+                  <option value="49 - تيميمون">49 - تيميمون</option>
+                  <option value="50 - برج باجي مختار">50 - برج باجي مختار</option>
+                  <option value="51 - أولاد جلال">51 - أولاد جلال</option>
+                  <option value="52 - بني عباس">52 - بني عباس</option>
+                  <option value="53 - عين صالح">53 - عين صالح</option>
+                  <option value="54 - عين قزام">54 - عين قزام</option>
+                  <option value="55 - تقرت">55 - تقرت</option>
+                  <option value="56 - جانت">56 - جانت</option>
+                  <option value="57 - المغير">57 - المغير</option>
+                  <option value="58 - المنيعة">58 - المنيعة</option>
                 </select>
               </div>
 
@@ -371,7 +725,15 @@
                 <label for="candleChoice" data-i18n="form_candle_label">الموديل المطلوب</label>
                 <select id="candleChoice" required>
                   <option value="" disabled selected data-i18n="form_candle_placeholder">اختر الشمعة المطلوبة...</option>
-                  <!-- Populated dynamically from catalog -->
+                  <option value="Bourbon Vanilla (فانيليا بوربون)">Bourbon Vanilla (فانيليا بوربون)</option>
+                  <option value="Rosy Musk (المسك الوردي)">Rosy Musk (المسك الوردي)</option>
+                  <option value="Noble Forest (الغابة النبيلة)">Noble Forest (الغابة النبيلة)</option>
+                  <option value="Trio Prestige (المجموعة الملكية الثلاثية)">Trio Prestige (المجموعة الملكية الثلاثية)</option>
+                  <option value="Vanilla Cotton & Sage Teakwood">Vanilla Cotton & Sage Teakwood</option>
+                  <option value="Matte Tin Collection (تشكيلة العلب المعدنية)">Matte Tin Collection (تشكيلة العلب المعدنية)</option>
+                  <option value="Bougie Citronnelle (فانوس العنبر - سيترونيلا)">Bougie Citronnelle (فانوس العنبر - سيترونيلا)</option>
+                  <option value="Fresh Blossom Tin (زهر الربيع الأزرق)">Fresh Blossom Tin (زهر الربيع الأزرق)</option>
+                  <option value="Spicy Bread (خبز التوابل الدافئ)">Spicy Bread (خبز التوابل الدافئ)</option>
                 </select>
               </div>
 
